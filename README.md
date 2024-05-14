@@ -1,5 +1,5 @@
 # Ex.08 Design of a Standard Calculator
-## Date:
+## Date:07.05.24
 
 ## AIM:
 To design a web application for a standard calculator with minimum five operations.
@@ -25,8 +25,155 @@ Validate the HTML and CSS code.
 Publish the website in the given URL.
 
 ## PROGRAM :
+```
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+    function dis(x){
+        document.getElementById("inbox").value+=x;
+    }
+    function clr(){
+        document.getElementById("inbox").value='';
+    }
+    function del(){
+        var num=document.getElementById("inbox").value;
+        var ans=num.substring(0,num.length-1);
+        document.getElementById("inbox").value=ans;
+    }
+    function fun(){
+        var res=document.getElementById("inbox").value;
+        if(res){
+        var ans=eval(res);
+        document.getElementById("inbox").value=ans;
+        }
+    }
+    </script>
+
+</head>
+<style>
+body{
+background-color:rgb(236, 7, 7);
+}
+.container{
+ position:relative;
+margin-top:30px;
+margin-left:45px;
+width:270px;
+height:380px;
+
+}
+button{
+width:60px;
+height:50px;
+padding:20px 40px 20px 20px;
+border-right: none;
+font-size:20px;
+text-align: center;
+}
+input{
+
+width:253px;
+height:100px;
+font-size:30px;}
+#b10{
+padding-right:107px;
+}
+.box{
+    position:absolute;
+    top:27%;
+margin-left:35%;
+   height:430px;
+   width:340px;
+    background-color:darkgrey;
+    margin-right: 100px;
+    
+top: 30%;
+left: 60px;
+border-radius: 10px;
+overflow: hidden;
+padding-right: 5px;
+}
+h2{
+    text-align: center;
+    color: aqua;
+    font-family:serif;
+    margin-top: 90px;
+    margin-left:0.5%;
+    font-size: x-large;
+}
+.red{
+    background-color: red;
+    color: green;
+}
+.red1{
+    color: green;
+
+}
+.red3{
+    color: green;
+}
+.red4{
+    color: green;
+}
+.red5{
+    color: green;
+}
+.yellow{
+    color: green;
+}
+.yellow2{
+    color: green;
+    
+}
+.red6{
+    color: green;
+}
+.blue{
+    color: blue;
+    background-color: lightskyblue;
+}
+</style>
+</head>
+<body>
+<div class="box">
+<div class="container">
+<input type="text"  class="blue" id="inbox"name="input"><br>
+<button onclick="clr()"> AC</button>
+<button class="red"  onclick="del()">DE</button>
+<button class="red4" onclick="dis('%')">%</button>
+<button class="red5" onclick="dis('/')">/</button><br>
+<button name="1" onclick="dis('1')">1</button>
+<button onclick="dis('2')">2</button>
+<button onclick="dis('3')">3</button>
+<button class="red3" onclick="dis('+')">+</button ><br>
+<button onclick="dis('4')">4</button>
+<button  onclick="dis('5')">5</button>
+<button onclick="dis('6')">6</button>
+<button class="red2"  onclick="dis('-')">-</button><br>
+<button onclick="dis('7')">7</button>
+<button onclick="dis('8')">8</button>
+<button onclick="dis('9')">9</button>
+<button class="yellow" onclick="dis('*')" >x</button><br>
+<button class="yellow1" onclick="dis('.')">.</button>
+<button onclick="dis('0')">0</button>
+<button id="b10" class="red6" onclick="fun()">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=</button><br>
+</div>
+</div>
+<h2>
+    KARTHICK RAJ M calculator<br><br>
+    Register Number:212221040073
+</h2>
+</body>
+</html>
+```
 
 ## OUTPUT:
+![alt text](<Screenshot 2024-05-07 231141.png>)
 
+![alt text](<Screenshot 2024-05-07 231153.png>)
 ## RESULT:
 The program for designing a standard calculator using HTML and CSS is executed successfully.
