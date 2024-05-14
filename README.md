@@ -164,8 +164,8 @@ h2{
 </div>
 </div>
 <h2>
-    KARTHICK RAJ M calculator<br><br>
-    Register Number:212221040073
+    UDAYANITHI calculator<br><br>
+    Register Number:212221220056
 </h2>
 </body>
 </html>
